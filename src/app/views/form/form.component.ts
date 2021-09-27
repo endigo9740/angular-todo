@@ -30,7 +30,7 @@ export class FormComponent implements OnInit {
         if (!this.formValues.title) { return; }
         // Submit formValues as payload to service createTodos() method
         this.todoService.createTodo(this.formValues).subscribe(res => {
-            // On success, u=se @angular > Router to naviate to desired route
+            // On success, use @angular > Router to naviate to desired route
             // NOTE: JSONPlaceholder ID returned for POST response is always
             // `id: 201` and the GET call for this will fail with status 404
             this.router.navigate(['/inner', res.id]);
