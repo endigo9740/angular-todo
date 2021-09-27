@@ -1,0 +1,17 @@
+<section>
+    <input type="text" placeholder="Search..." [(ngModel)]="search">
+</section>
+<section>
+    <!-- Wrap async data with conditoinal for safety -->
+    <nav *ngIf="todosList.length > 0">
+        <!-- Loop through each using the filtered search results -->
+        <!-- Construct the router link via each 'segment' in an array format -->
+        <a *ngFor="let t of filteredTodos(); index as i" [routerLink]="['inner', t.id]">
+            <h2>{{t.title}}</h2>
+            <ul>
+                <li>Complete: {{t.completed}}</li>
+                <li>ID: {{t.id}}</li>
+            </ul>
+        </a>
+    </nav>
+</section>

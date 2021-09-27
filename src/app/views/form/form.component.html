@@ -1,0 +1,10 @@
+<section>
+    <!-- {userId: number, id: number, title: string, body: string} -->
+    <input type="hidden" [(ngModel)]="formValues.userId">
+    <input type="hidden" [(ngModel)]="formValues.id">
+    <input type="hidden" [(ngModel)]="formValues.completed">
+    <input type="text" [(ngModel)]="formValues.title" placeholder="Enter Title">
+</section>
+<section>
+    <a class="btn" (click)="submit()">Submit</a>
+</section>
