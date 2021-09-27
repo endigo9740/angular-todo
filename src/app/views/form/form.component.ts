@@ -10,10 +10,12 @@ import { TodoService, Todo } from 'src/app/services/todos.service';
 })
 export class FormComponent implements OnInit {
     public formValues: Todo = {
+        // --- (hardcoded) ---
         userId: 0,
         id: 0,
-        title: '',
         completed: false,
+        // --- / ---
+        title: '',
     };
 
     constructor(
