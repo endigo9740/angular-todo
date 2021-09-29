@@ -1,11 +1,13 @@
-<section>
-    <a routerLink="/">&larr; Back</a>
-</section>
-<!-- Wrap in conditional for async safety -->
-<section *ngIf="todoDetails">
-    <h2>{{todoDetails.title}}</h2>
-    <ul>
-        <li>Complete: {{todoDetails.completed}}</li>
-        <li>ID: {{todoDetails.id}}</li>
-    </ul>
-</section>
+<div class="inner">
+    <section>
+        <a routerLink="/">&larr; Back</a>
+    </section>
+    <!-- Wrap in conditional for async safety -->
+    <section *ngIf="todoDetails">
+        <h2>{{todoDetails.title}}</h2>
+        <ul>
+            <li>Complete: {{todoDetails.completed}}</li>
+            <li>ID: {{todoDetails.id}}</li>
+        </ul>
+    </section>
+</div>

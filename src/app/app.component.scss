@@ -1,8 +1,7 @@
 #app {
-    padding: 50px;
     header {
         display: flex; justify-content: space-between; align-items: center;
-        border-bottom: 1px dotted white;
-        margin-bottom: 20px; padding-bottom: 20px;
+        border-bottom: 1px dotted rgba(255,255,255,0.33);
+        margin-bottom: 25px; padding-bottom: 25px;
     }
 }
